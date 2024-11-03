@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: #00bcd4;
+}
+
+/* Body Styling */
+body {
+    background-color: #10131a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #00bcd4;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.twitter-icon {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #00e5ff;
+    animation: glitch 1.5s infinite;
+}
+
+.crypto-name {
+    color: #00bcd4;
+}
+
+.hero-text p {
+    font-size: 24px;
+    color: #00acc1;
+    margin-top: 10px;
+}
+
+.crypto-logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.logo-glow {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #00e5ff;
+    box-shadow: 0 0 20px #00e5ff, 0 0 40px #00e5ff, 0 0 80px #00e5ff;
+    animation: pulse 2s infinite;
+}
+
+.description p {
+    font-size: 18px;
+    color: #00838f;
+    margin-top: 10px;
+}
+
+/* Dexscreener Icon */
+.dexscreener-icon {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00796b;
+    text-decoration: none;
+}
+
+.dexscreener-icon:hover {
+    color: #00e5ff;
+    text-shadow: 0 0 5px #00e5ff;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    color: #004d40;
+}
+
+/* Animations */
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px 0 #00e5ff, -2px -2px 0 #00acc1;
+    }
+    50% {
+        text-shadow: -2px 2px 0 #00e5ff, 2px -2px 0 #00acc1;
+    }
+    100% {
+        text-shadow: 2px -2px 0 #00e5ff, -2px 2px 0 #00acc1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px #00e5ff, 0 0 40px #00e5ff, 0 0 80px #00e5ff;
+    }
+    50% {
+        box-shadow: 0 0 30px #00e5ff, 0 0 60px #00e5ff, 0 0 100px #00e5ff;
+    }
+}
